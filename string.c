@@ -6,6 +6,9 @@ int main(void)
 {
     char s[100000] = {0}; // double max length == 309
     scanf("%100000s", s); // s - first element address, s[0] - first element, s[1] - second element
+    if(scanf("%100000s", s) != 1){
+        return 1;
+    }
     int i = 0;
     char s1[100000] = {0};
     int i1 = 0;
